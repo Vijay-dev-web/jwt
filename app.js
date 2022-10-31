@@ -9,7 +9,14 @@ app.get('/', () => {
 
 app.get('/error', () => {
     res.status(404).send("Page not found!!!")
-})    
+})   
+    
+app.get('/pages', () => {
+    res.send({
+        status: 200,
+        message: "Success!!!"
+  })
+})     
 
 app.use(cors())
     
