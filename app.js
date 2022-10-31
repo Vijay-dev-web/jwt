@@ -7,6 +7,10 @@ app.get('/', () => {
     console.log("Welcome to routes...!) 
 })
 
+app.get('/error', () => {
+    res.status(404).send("Page not found!!!")
+})    
+
 app.use(cors())
     
 app.listen(3000, () => {
