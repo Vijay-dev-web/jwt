@@ -15,6 +15,12 @@ app.get('/additionalPages', () => {
     res.send({
        status: 200,
        message:"Additional pages added"
+})   
+    
+app.get('/pages', () => {
+    res.send({
+        status: 200,
+        message: "Success!!!"
   })
 })     
 
