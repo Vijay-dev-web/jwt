@@ -9,6 +9,11 @@ app.get('/', () => {
 
 app.get('/error', () => {
     res.status(404).send("Page not found!!!")
+})
+
+app.get('/location', () => {
+    res.send("Enter allowed location...!")
+
 }) 
     
 app.get('/additionalPages', () => {
