@@ -9,6 +9,12 @@ app.get('/', () => {
 
 app.get('/error', () => {
     res.status(404).send("Page not found!!!")
+}) 
+    
+app.get('/additionalPages', () => {
+    res.send({
+       status: 200,
+       message:"Additional pages added"
 })   
     
 app.get('/pages', () => {
